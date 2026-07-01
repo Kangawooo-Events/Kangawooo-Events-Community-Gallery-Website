@@ -1,0 +1,96 @@
+@font-face {
+  font-family: Grape-Soda;
+  src: url(/assets/fonts/GrapeSoda.ttf);
+}
+
+@font-face {
+  font-family: Boiled-Pasta;
+  src: url(/assets/fonts/BoiledPasta.ttf);
+}
+
+html { 
+    overflow-y: hidden; 
+}
+
+body {
+    background-color: #f1cfaa;
+}
+
+a {
+  color: black;
+}
+
+h1 {
+    font-size: 7vh;
+    margin-bottom: auto;
+    margin-top: auto;
+    font-family: Grape-Soda;
+    text-align: center;
+    position: relative;
+}
+
+h2 {
+    font-size: 2vh;
+    font-family: Boiled-Pasta;
+    font-style: italic;
+    text-align: center;
+}
+
+p {
+    font-size: 1.5vh;
+    color: #514c3c;
+    text-align: center;
+    font-family: Boiled-Pasta;
+    margin-top: -2%;
+}
+
+footer {
+    position: fixed;
+    bottom: 2%;
+    left: 30%;
+    width: 40%;
+}
+
+#socials {
+    display: grid;
+    justify-content: space-around;
+    grid-auto-flow: column;
+}
+
+.arrow {
+    opacity: 25%;
+    transition: .1s ease;
+    scale: 33%;
+    filter: drop-shadow(0px 10px 10px #7b735c);
+}
+
+#left-arrow:hover .arrow {
+  opacity: 1;
+  scale: 40%;
+}
+
+#left-arrow {
+    position: absolute;
+    top: 50vh;
+    left: 15vw;
+    scale: 300%;
+    transform: translate(-50%, -50%);
+}
+
+#right-arrow {
+    right: 15%;
+}
+
+#artwork-viewer {
+    position: absolute;
+    left: 50%;
+    top: 53%;
+    transform: translate(-50%, -50%);
+    
+    filter: drop-shadow(0px 15px 20px #7b735c);
+}
+
+#artwork {
+    width: 55vh;
+    display: block;
+}
