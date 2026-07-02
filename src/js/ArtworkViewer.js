@@ -20,13 +20,9 @@ window.onload = function () {
     });
 
     const left_arrow = document.getElementById('left-arrow');
-    left_arrow.addEventListener("mouseover",function(){
-        this.src = this.src.replace('fill', 'line')
+    left_arrow.addEventListener("click",function(){
+        
     });
-    left_arrow.addEventListener("mouseout",function(){
-        this.src = this.src.replace('line', 'fill')
-    });
-    
 }
 
 
