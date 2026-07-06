@@ -5,11 +5,18 @@ var mouse_y = 0;
 const artwork_map = new Map([
     [0, ["cammie1", "Cammie and Crycatt", "cammiescorner"]],
     [1, ["carrion1", "Gossip Gills", "_c4rri0n"]],
-    [2, ["hoku1", "The Copper Cat", "Overcooked_rock"]],
-    [3, ["hoku2", "Hoku the Traveling Musician", "HokuIsAfish"]],
-    [4, ["lan1", "Become Memory", "Lan"]],
-    [5, ["mirko1", "Final moments", "mirk0oo"]],
-    [6, ["rainbells1", "The kingdom of Solaria", "rainbells"]],
+    [2, ["clipz1", "Hundred Hits", "cl1pz."]],
+    [3, ["crycatt1", "Barbie", "Crycatt"]],
+    [4, ["hoku1", "The Copper Cat", "Overcooked_rock"]],
+    [5, ["hoku2", "Hoku the Traveling Musician", "HokuIsAfish"]],
+    [6, ["lan1", "Become Memory", "Lan"]],
+    [7, ["mirko1", "Final moments", "mirk0oo"]],
+    [8, ["nez1", "Royalty of Iskandar", "Nez"]],
+    [9, ["rainbells1", "The kingdom of Solaria", "rainbells"]],
+    [10, ["staardumb1", "A Voice for All", "_staardumb"]],
+    [11, ["tateyamaayano1", "Mayor Luckystreak", "florrarra"]],
+    [12, ["teagar1", "Mirko and the Gang", "teagar_"]],
+    [13, ["vevibelle1", "SCORP, Excellence & Efficiency", "vevibelle"]],
 ]);
 
 
@@ -54,7 +61,7 @@ window.onload = function() {
     const right_arrow = document.getElementById('right-arrow');
     right_arrow.addEventListener("click",function(){
         if (parseInt(artwork_key) >= artwork_map.size-1) {
-            artwork_key = "0"
+            artwork_key = "-1"
         }
         window.location.replace("?artwork=" + String(parseInt(artwork_key) + 1))
     });
@@ -68,7 +75,6 @@ function update_artwork(artwork_key, artwork_viewer) {
     } else {
         if (artwork_map.get(parseInt(artwork_key))) {
             artwork.src = '/assets/images/artwork/' + artwork_map.get(parseInt(artwork_key))[0] + '.png'
-            artwork_viewer.style.transform = `translate(-50%, -50%) perspective(50cm) rotateX(${mouse_y * sensitivity}deg) rotateY(${-mouse_x * sensitivity}deg) `
             title.innerHTML  = artwork_map.get(parseInt(artwork_key))[1]
             credit.innerHTML  = "Artwork by " + artwork_map.get(parseInt(artwork_key))[2]
         } else {
