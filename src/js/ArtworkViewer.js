@@ -16,7 +16,8 @@ const artwork_map = new Map([
     [10, ["staardumb1", "A Voice for All", "_staardumb"]],
     [11, ["tateyamaayano1", "Mayor Luckystreak", "florrarra"]],
     [12, ["teagar1", "Mirko and the Gang", "teagar_"]],
-    [13, ["vevibelle1", "SCORP, Excellence & Efficiency", "vevibelle"]],
+    [13, ["timocee1", "I Ran A Horse Race In Minecraft, ON FOOT!", "tim0cee"]],
+    [14, ["vevibelle1", "SCORP, Excellence & Efficiency", "vevibelle"]],
 ]);
 
 
